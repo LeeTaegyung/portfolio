@@ -224,6 +224,10 @@ body {
   opacity: 1;
   transition: all .6s .8s;
 }
+.portfolio .card.active .text .valid p {
+  display: inline-block;
+  margin-left: 4px;
+}
 .portfolio .card.active .text .valid a {
   display: block;
 }
