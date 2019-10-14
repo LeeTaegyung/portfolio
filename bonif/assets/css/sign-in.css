@@ -1,0 +1,382 @@
+.main .inner {
+  width: 560px;
+}
+
+
+.main {
+  padding: 97px 0 120px;
+}
+.title {
+  margin: 42px 0 30px;
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+}
+.login-wrap {
+  position: relative;
+  padding-top: 51px;
+}
+.login-wrap .sub-title {
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  width: 50%;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+}
+.login-wrap .sub-title.on {
+  color: #222;
+}
+.login-wrap .sub-title.on::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #6e0000;
+  content: '';
+}
+.login-wrap .member .sub-title {
+  left: 0;
+}
+.login-wrap .non-member .sub-title {
+  right: 0;
+}
+.login-wrap .content {
+  display: none;
+}
+.login-wrap .sub-title.on + .content {
+  display: block;
+}
+.login-wrap .form {
+  padding: 20px 50px 0;
+}
+.login-wrap .form .desc {
+  margin: 20px 0 26px;
+}
+.login-wrap .form .desc strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.login-wrap .form .desc p {
+  position: relative;
+  font-size: 16px;
+  color: #666;
+  line-height: 26px;
+}
+.login-wrap .form .desc p a {
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  right: 6px;
+  color: #666;
+  text-decoration: underline;
+}
+.login-wrap .form .desc p a::after {
+  display: inline-block;
+  margin-left: 6px;
+  border-right: 1px solid #7c7c7c;
+  border-bottom: 1px solid #7c7c7c;
+  width: 7px;
+  height: 7px;
+  transform: rotate(-45deg);
+  vertical-align: 2px;
+  content: '';
+}
+.login-wrap .form .input {
+  margin-top: 20px;
+}
+.login-wrap .form .input input {
+  display: block;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 16px;
+}
+.login-wrap .form .input input:focus {
+  border: 1px solid #962639;
+}
+.login-wrap .form .checkbox {
+  margin: 13px 0 28px;
+}
+.login-wrap .form .checkbox input {
+  display: none;
+}
+.login-wrap .form .checkbox label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  line-height: 24px;
+}
+.login-wrap .form .checkbox label::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../images/icons.png) left -40px no-repeat;
+  content: '';
+}
+.login-wrap .form .checkbox input:checked + label::before {
+  background-position: -40px -40px;
+}
+.login-wrap .non-member .form .submit {
+  margin-top: 40px;
+}
+.login-wrap .form .submit input {
+  display: block;
+  border: 1px solid #6e0000;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #6e0000;
+  box-sizing: border-box;
+}
+
+.login-wrap .form .input input:focus {
+  border: 1px solid #962639;
+}
+.login-wrap .form .agree {
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #ddd;
+}
+.login-wrap .form .agree-check {
+  position: relative;
+  padding: 20px;
+}
+.login-wrap .form .agree-check input {
+  display: none;
+}
+.login-wrap .form .agree-check label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+}
+.login-wrap .form .agree-check label::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(../images/icons.png) left -40px no-repeat;
+  content: '';
+}
+.login-wrap .form .agree-check input:checked + label::before {
+  background-position: -40px -40px;
+}
+.login-wrap .form .agree-check button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+}
+.login-wrap .form .agree-check button .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 7px;
+  text-indent: -9999em;
+  background: url(../images/icons.png) -120px top no-repeat;
+  content: '';
+}
+.login-wrap .form .agree.open .agree-check button .icon {
+  background-position: -120px -20px;
+}
+.login-wrap .form .agree-desc {
+  display: none;
+  padding: 20px;
+  height: 135px;
+  color: #666;
+  line-height: 1.5;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.login-wrap .form .select {
+  margin-top: 20px;
+}
+.login-wrap .form .select-inner {
+  float: left;
+  width: 325px;
+}
+.login-wrap .form .select-inner .item {
+  float: left;
+  padding-right: 10px;
+  width: 33.333333%;
+  box-sizing: border-box;
+}
+.login-wrap .form .select select,
+.login-wrap .form .select input[type="text"] {
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  color: #666;
+  box-sizing: border-box;
+}
+.login-wrap .form .select select {
+  padding: 0 40px 0 12px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background: url(../images/select-icon.png) right center no-repeat;
+}
+.login-wrap .form .select input[type="button"],
+.login-wrap .form .number input[type="button"] {
+  float: right;
+  border: 0;
+  width: 135px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background: #444;
+}
+.login-wrap .form .number {
+  margin-top: 20px;
+}
+.login-wrap .form .number input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  width: 315px;
+  height: 50px;
+  box-sizing: border-box;
+}
+.login-wrap .form .select input[type="text"]:focus,
+.login-wrap .form .number input[type="text"]:focus {
+  border: 1px solid #962639;
+}
+.login-wrap .required-msg {
+  display: none;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: #962639;
+  line-height: 1em;
+}
+.login-wrap .or {
+  position: relative;
+  text-align: center;
+}
+.login-wrap .or::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: -1;
+  content: '';
+}
+.login-wrap .or span {
+  display: inline-block;
+  width: 50px;
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 18px;
+  color: #999;
+  line-height: 60px;
+  background: #fff;
+}
+.login-wrap .sns-login {
+  padding: 0 50px;
+}
+.login-wrap .sns-login div {
+  float: left;
+  padding: 0 10px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.login-wrap .sns-login a {
+  display: block;
+  border: 1px solid #dfdfdf;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+.login-wrap .sns-login .icon {
+  display: inline-block;
+  margin-right: 4px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+  vertical-align: -6px;
+}
+.login-wrap .sns-login .kakaotalk .icon {
+  background-position: left -120px;
+}
+.login-wrap .sns-login .naver .icon {
+  background-position: -40px -120px;
+}
+.login-wrap .find-wrap {
+  margin-top: 10px;
+  padding: 0 50px;
+}
+.login-wrap .find-wrap a {
+  position: relative;
+  display: inline-block;
+  margin-right: 26px;
+  padding: 0 7px 0 4px;
+  line-height: 36px;
+  color: #666;
+}
+.login-wrap .find-wrap a:last-child::before {
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: -14px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 17px;
+  background: #ddd;
+  content: '';
+}
+.login-wrap .find-wrap a::after {
+  display: inline-block;
+  margin-left: 6px;
+  border-right: 1px solid #7c7c7c;
+  border-bottom: 1px solid #7c7c7c;
+  width: 7px;
+  height: 7px;
+  transform: rotate(-45deg);
+  vertical-align: 2px;
+  content: '';
+}
+.banner {
+  display: block;
+  margin: 40px 50px 0;
+  padding: 30px;
+  width: 460px;
+  height: 120px;
+  background: url(../images/login-banner.jpg) center center no-repeat;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -.4px;
+  box-sizing: border-box;
+}
+.banner span {
+  display: block;
+  font-size: 22px;
+}
