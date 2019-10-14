@@ -216,7 +216,7 @@ body {
 .portfolio .card .text .valid {
   position: relative;
   top: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
   opacity: 0;
 }
 .portfolio .card.active .text .valid {
@@ -224,10 +224,13 @@ body {
   opacity: 1;
   transition: all .6s .8s;
 }
+.portfolio .card.active .text .valid a {
+  display: block;
+}
 .portfolio .card .text .links {
   position: relative;
   top: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
   opacity: 0;
 }
 .portfolio .card.active .text .links {
