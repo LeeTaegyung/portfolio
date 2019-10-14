@@ -1,8 +1,9 @@
-body {
+
+#wrap {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
-
-
 #wrap.fixed .main {
   padding-top: 99px;
 }
@@ -435,10 +436,10 @@ body {
 .sec05 .tab-box {
   position: relative;
   margin-top: 40px;
-  padding-bottom: 780px;
 }
 .sec05 .tab-box > ul {
   text-align: center;
+  white-space: nowrap;
 }
 .sec05 .tab-box > ul > li {
   display: inline-block;
@@ -472,72 +473,72 @@ body {
   color: #550adf;
   font-weight: 700;
 }
-.sec05 .tab-box .tab-content {
+.sec05 .content-box .tab-content {
   display: none;
-  position: absolute;
-  top: 254px;
-  left: 0;
+  position: relative;
+  top: 40px;
+  margin-top: 60px;
   width: 100%;
   text-align: left;
   opacity: 0;
 }
-.sec05.on .tab-box .tab-content {
-  top: 104px;
+.sec05.on .content-box .tab-content {
+  top: 0;
   opacity: 1;
   transition: all .3s .4s;
 }
-.sec05 .tab-box button.on + .tab-content {
+.sec05 .content-box .tab-content.on {
   display: block;
 }
-.sec05 .tab-box .tab-content li {
+.sec05 .content-box .tab-content li {
   float: left;
   margin-right: 22px;
   width: 276px;
 }
-.sec05 .tab-box .tab-content li.w574 {
+.sec05 .content-box .tab-content li.w574 {
   width: 574px;
 }
-.sec05 .tab-box .tab-content li:nth-child(3n) {
+.sec05 .content-box .tab-content li:nth-child(3n) {
   margin: 0;
 }
-.sec05 .tab-box .tab-content li:nth-child(3) ~ li {
+.sec05 .content-box .tab-content li:nth-child(3) ~ li {
   margin-top: 22px;
 }
-.sec05 .tab-box .tab-content li a {
+.sec05 .content-box .tab-content li a {
   display: block;
   width: 100%;
   transition: all .3s;
 }
-.sec05 .tab-box .tab-content li a:hover {
+.sec05 .content-box .tab-content li a:hover {
   box-shadow: 20px 25px 40px 0 rgba(0,0,0,0.2);
   transition: all .3s;
 }
-.sec05 .tab-box .tab-content li a .img img {
+.sec05 .content-box .tab-content li a .img img {
   display: block;
   width: 100%;
 }
-.sec05 .tab-box .tab-content li a .text {
+.sec05 .content-box .tab-content li a .text {
   padding: 25px 30px;
   background: #fff;
 }
-.sec05 .tab-box .tab-content li a:hover .text {
+.sec05 .content-box .tab-content li a:hover .text {
   background: linear-gradient(to bottom right,  rgba(111,35,249,1) 0%, rgba(85,10,223,1) 100%);
 }
-.sec05 .tab-box .tab-content li a .text .txt-title {
+.sec05 .content-box .tab-content li a .text .txt-title {
   display: block;
   font-weight: 700;
   font-size: 22px;
   color: #000;
 }
-.sec05 .tab-box .tab-content li a:hover .text .txt-title {
+.sec05 .content-box .tab-content li a:hover .text .txt-title {
   color: #fff;
 }
-.sec05 .tab-box .tab-content li a .text .txt-sub {
+.sec05 .content-box .tab-content li a .text .txt-sub {
   display: block;
   margin-top: 15px;
   color: #555;
 }
-.sec05 .tab-box .tab-content li a:hover .text .txt-sub {
+.sec05 .content-box .tab-content li a:hover .text .txt-sub {
   color: #fff;
 }
 .sec05 .more-box {
@@ -758,29 +759,26 @@ body {
     margin-top: 15px;
     font-size: 20px;
   }
-  .sec05 .tab-box {
-    padding-bottom: 1552px;
-  }
-  .sec05 .tab-box .tab-content li {
+  .sec05 .content-box .tab-content li {
     margin-right: 1%;
     width: 49%;
   }
-  .sec05 .tab-box .tab-content li:nth-child(2n+1) {
+  .sec05 .content-box .tab-content li:nth-child(2n+1) {
     margin-right: 0;
     margin-left: 1%;
   }
-  .sec05 .tab-box .tab-content li:nth-child(3) ~ li {
+  .sec05 .content-box .tab-content li:nth-child(3) ~ li {
     margin-top: 0;
   }
-  .sec05 .tab-box .tab-content li:nth-child(1) ~ li {
+  .sec05 .content-box .tab-content li:nth-child(1) ~ li {
     margin-top: 22px;;
   }
-  .sec05 .tab-box .tab-content li.w574 {
+  .sec05 .content-box .tab-content li.w574 {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
-  .sec05 .tab-box .tab-content li .img {
+  .sec05 .content-box .tab-content li .img {
     max-height: 246px;
     overflow: hidden;
   }
@@ -933,9 +931,6 @@ body {
     font-size: 30px;
     line-height: 35px;
   }
-  .sec05 .tab-box {
-    padding-bottom: 1377px;
-  }
   .sec05 .tab-box button {
     top: 0;
     opacity: 1;
@@ -950,20 +945,20 @@ body {
     height: 36px;
     line-height: 34px;
   }
-  .sec05 .tab-box .tab-content {
-    top: 104px;
+  .sec05 .content-box .tab-content {
+    top: 0;
     opacity: 1;
   }
-  .sec05 .tab-box .tab-content li:nth-child(1) ~ li {
+  .sec05 .content-box .tab-content li:nth-child(1) ~ li {
     margin-top: 15px;
   }
-  .sec05 .tab-box .tab-content li a .text {
+  .sec05 .content-box .tab-content li a .text {
     padding: 15px 20px;
   }
-  .sec05 .tab-box .tab-content li a .text .txt-title {
+  .sec05 .content-box .tab-content li a .text .txt-title {
     font-size: 18px;
   }
-  .sec05 .tab-box .tab-content li a .text .txt-sub {
+  .sec05 .content-box .tab-content li a .text .txt-sub {
     margin-top: 10px;
     font-size: 14px;
   }
@@ -1219,7 +1214,6 @@ body {
   }
   .sec05 .tab-box {
     margin-top: 20px;
-    padding-bottom: 1296px;
   }
   .sec05 .tab-box > ul > li {
     padding: 0 3px;
@@ -1235,20 +1229,20 @@ body {
     height: 32px;
     line-height: 30px;
   }
-  .sec05 .tab-box .tab-content {
-    top: 52px;
-  }
-  .sec05 .tab-box .tab-content li:nth-child(1) ~ li {
+  .sec05 .content-box .tab-content {
     margin-top: 20px;
   }
-  .sec05 .tab-box .tab-content li a .text {
+  .sec05 .content-box .tab-content li:nth-child(1) ~ li {
+    margin-top: 20px;
+  }
+  .sec05 .content-box .tab-content li a .text {
     padding: 10px 7%;
   }
-  .sec05 .tab-box .tab-content li a .text .txt-title {
+  .sec05 .content-box .tab-content li a .text .txt-title {
     font-size: 14px;
     line-height: 18px;
   }
-  .sec05 .tab-box .tab-content li a .text .txt-sub {
+  .sec05 .content-box .tab-content li a .text .txt-sub {
     font-size: 10px;
   }
   .sec05 .more-box {

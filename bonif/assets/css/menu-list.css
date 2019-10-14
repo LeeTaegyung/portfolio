@@ -168,9 +168,6 @@
   right: 0;
   top: 390px;
 }
-.quick li {
-  background-color: 
-}
 .quick li a {
   display: block;
   border-bottom: 1px solid rgba(255,255,255,.2);

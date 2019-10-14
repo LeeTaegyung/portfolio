@@ -48,8 +48,11 @@ $(function() {
   });
 
   $('.tab-box button').on('click',function() {
+    var idx = $(this).parent().index();
     $('.tab-box button').removeClass('on');
     $(this).addClass('on');
+    $('.content-box .tab-content').removeClass('on');
+    $('.content-box .tab-content').eq(idx).addClass('on');
   })
 
   if($(window).width() < 758 ) {
