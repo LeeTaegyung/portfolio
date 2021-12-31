@@ -1,142 +1,267 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="robots" content="noindex" />
-  <title>이태경  포트폴리오</title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="vendor/jquery.min-3.3.1.js"></script>
-  <script src="assets/js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="이태경의 포트폴리오">
+    <meta property="og:description" content="웹퍼블리셔 이태경의 포트폴리오입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/kakao_talk.png">
+    <meta property="og:url" content="https://dnrk9140.cafe24.com/pf_test/">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c393d9e7a8.js" crossorigin="anonymous"></script>
+    <script src="assets/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <title>Portfolio</title>
 </head>
-
 <body>
-  <div id="wrap">
-    <div class="profile">
-      <div class="profile-box">
-        <h1>
-          <span>Lee Taegyung</span>
-          <br>
-          portfolio
-        </h1>
-        <p><span>name</span>이태경</p>
-        <p><span>birthday</span>1993.04.19</p>
-        <p><span>address</span>경북 경주시</p>
-        <p><span>email</span>taegyung.e@gmail.com</p>
-        <span class="scroll-down"></span>
-      </div>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <h1 class="logo">
+                <span>T</span>
+                <span>A</span>
+                <span>E</span>
+                <span>G</span>
+                <span>Y</span>
+                <span>U</span>
+                <span>N</span>
+                <span>G</span>
+            </h1>
+        </header>
+        <!-- //header -->
+        <main id="main">
+            <!-- profile_sec -->
+            <section class="profile_sec">
+                <h2 class="title"><span>Profile</span></h2>
+                
+                <dl>
+                    <dt>이름</dt>
+                    <dd>이태경</dd>
+                </dl>
+                <dl>
+                    <dt>주소</dt>
+                    <dd>서울특별시 강서구</dd>
+                </dl>
+                <dl>
+                    <dt>이메일</dt>
+                    <dd>ffff_0292@naver.com</dd>
+                </dl>
+                <dl>
+                    <dt>경력</dt>
+                    <dd>
+                        <div class="sign_p">
+                            <i>·</i>아이티코지 <span>스타트업 (2019.03.21 ~ 2019.09.15)</span>
+                        </div>
+                        <div class="sign_p">
+                            <i>·</i>유월커뮤니케이션 <span>에이전시 (2019.10.31 ~ 2021.12.10)</span>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <!-- //profile_sec -->
+            <!-- list_sec -->
+            <section class="list_sec">
+                <h2 class="title"><span>Portfolio</span></h2>
+                <ul class="list">
+                    <li>
+                        <button type="button" data-detail="naturalhc">
+                            <img src="assets/img/pf/naturalhc_landing.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">초월홍삼</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="infiniq">
+                            <img src="assets/img/pf/data-hub.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">인피닉</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="ablelaw">
+                            <img src="assets/img/pf/ablelaw.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">에이블</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="sutagroup">
+                            <img src="assets/img/pf/sutagroup.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">슈퍼탈렌트</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="hansarangwoori">
+                            <img src="assets/img/pf/hansarangwoori.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">한사랑우리</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="koreafutures">
+                            <img src="assets/img/pf/koreafutures.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">코리아퓨처스</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="landbuildercnd">
+                            <img src="assets/img/pf/landbuildercnd.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">랜드빌더</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="golyeo">
+                            <img src="assets/img/pf/golyeo.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">고려여행사</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="onoff">
+                            <img src="assets/img/pf/onoff_landing.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">온오프</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="keibtv">
+                            <img src="assets/img/pf/keibtv_landing.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">한국경제투자TV</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="cuckoo">
+                            <img src="assets/img/pf/cuckoo.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">쿠쿠</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="doya">
+                            <img src="assets/img/pf/doya.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">도야</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="aireats">
+                            <img src="assets/img/pf/aireats01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">에어이츠</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="greenroad">
+                            <img src="assets/img/pf/greenroad.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">서로안전캠페인</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="gbithub">
+                            <img src="assets/img/pf/gbithub01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">GBITHUB</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="mamacomm">
+                            <img src="assets/img/pf/mamacomm01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">마마커뮤니케이션즈</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="twisted7">
+                            <img src="assets/img/pf/7wisted01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">7WISTED</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="kbs">
+                            <img src="assets/img/pf/kbs_landing.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">KBS미디어 청년취업 아카데미</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="runtire">
+                            <img src="assets/img/pf/runtire01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">런타이어</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="fingertrips">
+                            <img src="assets/img/pf/fingertrips01.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">핑거트립스</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="avendutch">
+                            <img src="assets/img/pf/avendutch.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">어벤더치</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" data-detail="game24">
+                            <img src="assets/img/pf/game24.jpg" alt="">
+                            <div class="cover_box">
+                                <strong class="project_name">게임24시</strong>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <!-- //list_sec -->
+            <!-- detail_sec -->
+            <section class="detail_sec">
+                <div class="back_row">
+                    <button type="button" class="back_btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <iframe src="" frameborder="0"></iframe>
+            </section>
+            <div class="dim"></div>
+            <!-- //detail_sec -->
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <p class="copy">Copyright Lee Tae-Gyung 2021. All Rights Reserved.</p>
+        </footer>
+        <!-- //footer -->
     </div>
-    <div class="portfolio">
-      <div class="wrap">
-        <div class="card">
-          <div class="card-inner">
-            <div class="img">
-              <img src="assets/images/portfolio-img01.png" alt="GC녹십자 포트폴리오 이미지">
-            </div>
-            <div class="text">
-              <h2 class="title">GC녹십자</h2>
-              <div class="desc">
-                <p>고정형, fullpage 스크립트, 체크박스를 활용한 필터링, bxslider 플러그인 사용</p>
-              </div>
-              <div class="valid">
-                <p>
-                  <a href="http://validator.kldp.org/check?uri=https%3A%2F%2Ftaegyung.kr%2Fgreencross%2Findex.html;accept=text%2Fhtml%2Ctext%2Fxml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%2C%2A%2F%2A%3Bq%3D0.1"
-                    target="_blank">
-                    <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15"
-                      width="80">
-                  </a>
-                </p>
-                <p>
-                  <a href="https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Ftaegyung.kr%2Fgreencross%2Findex.html&ucn_lang=ko&ucn_task=conformance#"
-                    target="_blank">
-                    <img src="https://validator.kldp.org/w3cimgs/validate/css30-blue.png" alt="올바른 CSS입니다!" height="15"
-                      width="80">
-                  </a>
-                </p>
-              </div>
-              <div class="links clear">
-                <a href="greencross/index.html" target="_blank">main</a>
-                <a href="greencross/news.html" target="_blank">sub01</a>
-                <a href="greencross/product-search.html" target="_blank">sub02</a>
-                <a href="greencross/research-pipe.html" target="_blank">sub03</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="img">
-              <img src="assets/images/portfolio-img02.png" alt="본아이에프 포트폴리오 이미지">
-            </div>
-            <div class="text">
-              <h2 class="title">본아이에프</h2>
-              <div class="desc">
-                <p>고정형, 스크롤의 위치에 따른 애니메이션 효과, 데이터속성을 이용한 필터링, bxslider 플러그인 사용</p>
-              </div>
-              <div class="valid">
-                <p>
-                  <a href="http://validator.kldp.org/check?uri=https%3A%2F%2Ftaegyung.kr%2Fbonif%2Findex.html;accept=text%2Fhtml%2Ctext%2Fxml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%2C%2A%2F%2A%3Bq%3D0.1"
-                    target="_blank">
-                    <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15"
-                      width="80">
-                  </a>
-                </p>
-                <p>
-                  <a href="https://validator.w3.org/unicorn/check?ucn_uri=https%3A%2F%2Ftaegyung.kr%2Fbonif%2Findex.html&ucn_lang=ko&ucn_task=conformance#"
-                    target="_blank">
-                    <img src="https://validator.kldp.org/w3cimgs/validate/css30-blue.png" alt="올바른 CSS입니다!" height="15"
-                      width="80">
-                  </a>
-                </p>
-              </div>
-              <div class="links clear">
-                <a href="bonif/index.html" target="_blank">main</a>
-                <a href="bonif/sign-in.html" target="_blank">sub01</a>
-                <a href="bonif/sign-up.html" target="_blank">sub02</a>
-                <a href="bonif/menu-list.html" target="_blank">sub03</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="img">
-              <img src="assets/images/portfolio-img03.png" alt="롯데월드 포트폴리오 이미지">
-            </div>
-            <div class="text">
-              <h2 class="title">롯데월드</h2>
-              <div class="desc">
-                <p>반응형, 스크롤의 위치에 따른 애니메이션 효과, swiper 플러그인 사용</p>
-              </div>
-              <div class="valid">
-                <p>
-                  <a href="http://validator.kldp.org/check?uri=https%3A%2F%2Ftaegyung.kr%2Flotteworld%2Findex.html;accept=text%2Fhtml%2Ctext%2Fxml%2Capplication%2Fxhtml%2Bxml%2Capplication%2Fxml%2C%2A%2F%2A%3Bq%3D0.1"
-                    target="_blank">
-                    <img src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15"
-                      width="80">
-                  </a>
-                </p>
-              </div>
-              <div class="links clear">
-                <a href="lotteworld/index.html" target="_blank">main</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <ul class="list clear">
-        <li><button type="button">GC녹십자</button></li>
-        <li><button type="button">본아이에프</button></li>
-        <li><button type="button">롯데월드</button></li>
-      </ul>
-      <button type="button" class="profile-btn">profile</button>
-    </div>
-  </div>
 </body>
-
 </html>
