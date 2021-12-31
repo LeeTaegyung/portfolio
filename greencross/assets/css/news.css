@@ -1,0 +1,148 @@
+
+
+/* form-wrap */
+
+.form-wrap {
+  padding: 44px 120px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+}
+.form-wrap select {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 2px solid #dc761e;
+  width: 140px;
+  height: 50px;
+  font-size: 17px;
+  color: #dc761e;
+  background: url(../images/sub-select-arrow-orange.png) right 10px center no-repeat;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  box-sizing: border-box;
+}
+.form-wrap option {
+  font-weight: 300;
+}
+.form-wrap input[type="text"] {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  padding: 0 10px;
+  border: 0;
+  border-bottom: 2px solid #dc761e;
+  width: 536px;
+  height: 50px;
+  font-size: 17px;
+  color: #dc761e;
+  box-sizing: border-box;
+}
+.form-wrap input[type="text"]::placeholder {
+  color: #dc761e;
+}
+.form-wrap input[type="submit"] {
+  float: left;
+  display: block;
+  border: 0;
+  width: 102px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 17px;
+  color: #fff;
+  background: #222;
+}
+
+
+
+/* table-wrap */
+.table-wrap {
+  margin-top: 40px;
+}
+.table-wrap table {
+  width: 100%;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #ccc;
+  table-layout: fixed;
+}
+.table-wrap thead th {
+  border-bottom: 1px solid #e1e1e1;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  background: #fafafa;
+  vertical-align: middle;
+}
+.table-wrap tbody td {
+  border-bottom: 1px solid #e1e1e1;
+  height: 60px;
+  font-size: 15px;
+  color: #888;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .3s;
+}
+.table-wrap tbody tr:hover td {
+  background: #fff;
+}
+.table-wrap tbody td.category {
+  position: relative;
+}
+.table-wrap tbody td.category::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 41px;
+  background: #e1e1e1;
+  content: '';
+}
+.table-wrap tbody td.category::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 41px;
+  background: #e1e1e1;
+  content: '';
+}
+.table-wrap tbody td.subject {
+  text-align: left;
+  padding: 0 20px;
+}
+.table-wrap tbody td.subject a {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 34px;
+  line-height: 25px;
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.table-wrap tbody td.subject.new a::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url(../images/new-icon.png) center center no-repeat;
+  content: '';
+}
+.table-wrap tbody td.file span {
+  display: block;
+  margin: 0 auto;
+  width: 13px;
+  height: 15px;
+  background: url(../images/sub-file-icon.png) center center no-repeat;
+}
