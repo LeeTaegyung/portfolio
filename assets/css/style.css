@@ -320,7 +320,7 @@ h2.title span::after {
         overflow: hidden;
     }
     #main .list_sec .list li {
-        width: clac(50% - 10px);
+        width: calc(50% - 10px);
         margin-right: 20px;
         margin-bottom: 20px;
     }
